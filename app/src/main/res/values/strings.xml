@@ -1,5 +1,4 @@
 <resources>
-    <string name="app_name">Android</string>
     <string name="viewStudent" />
     <string name="parolaStud" />
     <string name="logStudent">Login</string>
@@ -30,6 +29,17 @@
     <string name="dataProfesor">Data nasterii</string>
     <string name="tvCodStudent">Introdu codul testului</string>
     <string name="edCodTestStud" />
+    <string name="cautaButton">Caută</string>
+    <string name="emailEditText" />
+    <string name="emailTextView">Caută studentul cu emailul:</string>
+    <string name="sauTextView">SAU</string>
+    <string name="codEditTextHint">Cod</string>
+    <string name="codEditText" />
+    <string name="codTextView">Caută testul cu codul:</string>
+    <string name="numeTextView">Nume test:</string>
+    <string name="numeEditText" />
+    <string name="listaQuizzTextView"/>
+
 
 
 </resources>

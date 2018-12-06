@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".create_quizz">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/numeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/numeEditText"
+            android:layout_alignLeft="@+id/numeEditText"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="22dp"
+            android:text="@string/numeTextView"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/codTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/codEditText"
+            android:layout_alignLeft="@+id/codEditText"
+            android:layout_below="@+id/numeEditText"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="22dp"
+            android:text="Cod test:"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tipTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/codEditText"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="22dp"
+            android:layout_alignStart="@id/numeEditText"
+            android:text="Tip test:"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/intrebariTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tipButton"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="22dp"
+            android:layout_alignStart="@id/numeEditText"
+            android:text="Întrebări:"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/numeEditText"
+            android:layout_width="260dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="45dp"
+            android:background="#11000000"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/numeEditText"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/codEditText"
+            android:layout_width="260dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/codTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:background="#11000000"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="#ffffff" />
+
+        <RadioGroup
+            android:id="@+id/tipButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tipTextView"
+            android:layout_alignStart="@+id/numeTextView"
+            android:textColor="#ffffff"
+            android:layout_marginTop="0dp"
+            >
+
+            <RadioButton
+                android:id="@+id/publicRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#ffffff"
+                android:text="Public" />
+
+            <RadioButton
+                android:id="@+id/privatRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#ffffff"
+                android:text="Privat" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/adaugaIntrebareButton"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/intrebariTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@android:color/background_dark"
+            android:text="Adaugă întrebare"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/stergereButton"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/adaugaIntrebareButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:background="@android:color/background_dark"
+            android:text="Șterge testul"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/adaugaTestButton"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/stergereButton"
+            android:layout_alignEnd="@id/adaugaIntrebareButton"
+            android:layout_marginTop="40dp"
+            android:background="@android:color/background_dark"
+            android:text="Adaugă test"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/renuntaButton"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/stergereButton"
+            android:layout_alignStart="@id/adaugaIntrebareButton"
+            android:layout_marginTop="40dp"
+            android:background="@android:color/background_dark"
+            android:text="Renunță"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".reports_table">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:id="@+id/progressBar2"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="260dp"
+            android:layout_height="26dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            tools:background="#ffff26d" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="1"
+            android:layout_marginTop="60dp">
+
+            <TableRow
+                android:visibility="visible"
+                tools:background="@android:color/darker_gray">
+
+                <TextView
+                    android:layout_column="1"
+                    android:padding="3dip"
+                    android:text="Nr.crt."
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"/>
+
+                <TextView
+                    android:layout_width="187dp"
+                    android:gravity="center"
+                    android:padding="3dip"
+                    android:text="Nume student"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"/>
+
+                <TextView
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text="Punctaj obținut"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"/>
+
+                <View
+                    android:layout_height="2dip"
+                    android:background="#ffffff" />
+
+            </TableRow>
+
+
+        </TableLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
