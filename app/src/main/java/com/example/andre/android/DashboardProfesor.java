@@ -1,0 +1,24 @@
+package com.example.andre.android;
+
+import android.content.Intent;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.widget.EditText;
+import android.widget.TextView;
+
+public class DashboardProfesor extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_dashboard_profesor);
+
+        TextView editTextProf = (TextView) findViewById(R.id.textGridProf);
+
+        Intent intent = getIntent();
+
+        String mail = intent.getStringExtra("myemail");
+
+        editTextProf.setText(mail);
+    }
+}

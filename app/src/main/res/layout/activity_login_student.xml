@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".LoginStudent">
+
+
+    <EditText
+        android:id="@+id/editTextStudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="208dp"
+        android:layout_marginEnd="86dp"
+        android:background="#11000000"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        android:text="@string/viewStudent"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="@android:color/background_light" />
+
+    <EditText
+        android:id="@+id/editTextParolaStud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editTextStudent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="278dp"
+        android:background="#11000000"
+        android:ems="10"
+        android:hint="Parola"
+        android:inputType="textPassword"
+        android:text="@string/parolaStud"
+        android:textAlignment="viewStart"
+        android:textColorHint="@android:color/background_light" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="125dp"
+        app:cardBackgroundColor="#dffff29a"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="10dp"
+        android:id="@+id/loginStud">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textViewLogStudent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/logStudent"
+                android:textColor="@android:color/background_dark"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="133dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginBottom="44dp"
+        android:text="@string/viewRegister"
+        android:textAlignment="center"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/checkBoxStud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="82dp"
+        android:layout_marginBottom="224dp"
+        android:text="Remeber me"
+        android:textSize="18sp"
+        android:textColor="@android:color/background_light" />
+</RelativeLayout>

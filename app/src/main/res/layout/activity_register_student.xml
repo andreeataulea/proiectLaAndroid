@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".RegisterStudent">
+
+
+    <EditText
+        android:id="@+id/editTextnumeStudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="86dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/numeStudent"
+        android:hint="Nume"
+        android:layout_centerVertical="true"/>
+
+    <EditText
+        android:id="@+id/editTextEmailStudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="151dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        android:layout_centerVertical="true"
+        android:text="@string/emailStudentRegister" />
+
+    <EditText
+        android:id="@+id/editTextParolaStudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="217dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:text="@string/parolaStudentRegister"
+        android:hint="Parola"
+        android:layout_centerVertical="true"/>
+
+    <Button
+        android:id="@+id/buttonDataStudent"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editTextnumeStudent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="183dp"
+        android:background="#64462560"
+        android:elevation="15dp"
+        android:fadingEdge="horizontal"
+        android:text="@string/dataStudent"
+        android:textAllCaps="false"
+        android:textColor="#cfcad1"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvDateStudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="122dp"
+        android:layout_marginBottom="196dp"
+        android:text="@string/tvDateStudent"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="italic"
+        android:layout_above="@id/editTextParolaStudent"
+        android:layout_alignRight="@id/buttonDataStudent"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editTextnumeStudent"
+        android:layout_alignRight="@id/tvSexStudent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginRight="-103dp"
+        android:layout_marginBottom="106dp">
+
+        <RadioButton
+            android:id="@+id/rbStudFeminin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Feminin"
+            android:textColor="#cfcad1" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/rbStudentMasculin"
+            android:textColor="#cfcad1" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvSexStudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="91dp"
+        android:layout_marginBottom="146dp"
+        android:text="@string/tvSexStudent"
+        android:textColor="#cfcad1"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_above="@id/buttonDataStudent"/>
+
+    <Button
+        android:id="@+id/btnSaveStudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="35dp"
+        android:background="#dffff29a"
+        android:elevation="15dp"
+        android:fadingEdge="horizontal"
+        android:text="@string/btnSaveStudent"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnInapoiStudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnSaveStudent"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="57dp"
+        android:background="#dffff29a"
+        android:elevation="15dp"
+        android:fadingEdge="horizontal"
+        android:text="@string/btnInapoiStudent"
+        android:textStyle="bold" />
+
+</RelativeLayout>

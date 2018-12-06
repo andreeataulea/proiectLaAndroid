@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Android</string>
+    <string name="viewStudent" />
+    <string name="parolaStud" />
+    <string name="logStudent">Login</string>
+    <string name="viewRegister">Register</string>
+    <string name="viewEmailProfesor" />
+    <string name="parolaProfesor" />
+    <string name="LogProf">Login</string>
+    <string name="registerProfesor">Register</string>
+    <string name="numeStudent" />
+    <string name="emailStudentRegister" />
+    <string name="parolaStudentRegister" />
+    <string name="dataStudent">Data nasterii</string>
+    <string name="tvDateStudent" />
+    <string name="tvSexStudent">Sex</string>
+    <string name="rbStudFeminin">Feminin</string>
+    <string name="rbStudentMasculin">Masculin</string>
+    <string name="btnSaveStudent">Save</string>
+    <string name="btnInapoiStudent">Inapoi</string>
+    <string name="numeProfesor" />
+    <string name="emailProfesorRegister" />
+    <string name="parolaProfesorRegister" />
+    <string name="rbProfMasculin">Masculin</string>
+    <string name="tvSexProfesor">Sex</string>
+    <string name="tvDateProfesor" />
+    <string name="btnInapoiProfesor">Inapoi</string>
+    <string name="btnSaveProfesor">Save</string>
+    <string name="rbProfFeminin">Feminin</string>
+    <string name="dataProfesor">Data nasterii</string>
+    <string name="tvCodStudent">Introdu codul testului</string>
+    <string name="edCodTestStud" />
+
+
+</resources>
