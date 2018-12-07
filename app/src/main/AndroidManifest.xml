@@ -15,16 +15,19 @@
         <activity android:name=".DashboardStudent" />
         <activity android:name=".DashboardProfesor" />
         <activity android:name=".TakeQuizz" />
-        <activity android:name=".Start">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".Start"/>
+
         <activity android:name=".TestCurentStudent" />
-        <activity android:name=".creare_intrebare" />
-        <activity android:name=".creare_intrebare_layout" />
+
+        <activity android:name=".creare_intrebare">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+
         <activity android:name=".create_quizz" />
         <activity android:name=".create_quizz_layout" />
         <activity android:name=".my_quizzes" />
@@ -32,7 +35,6 @@
         <activity android:name=".reports" />
         <activity android:name=".reports_layout" />
         <activity android:name=".reports_table" />
-
     </application>
 
 </manifest>

@@ -38,8 +38,7 @@
     <string name="codTextView">Caută testul cu codul:</string>
     <string name="numeTextView">Nume test:</string>
     <string name="numeEditText" />
-    <string name="listaQuizzTextView"/>
-
+    <string name="listaQuizzTextView" />
 
 
 </resources>
