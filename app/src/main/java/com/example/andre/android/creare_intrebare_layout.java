@@ -10,7 +10,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class creare_intrebare_layout extends Activity {
-    private Button a;
+    private Button add;
     private TextView b;
     private TextView c;
     private TextView d;
@@ -19,8 +19,8 @@ public class creare_intrebare_layout extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_creare_intrebare_layout);
-        a = (Button) findViewById(R.id.adaugaIntrebareB1);
-        a.setOnClickListener(new View.OnClickListener() {
+        add = (Button) findViewById(R.id.adaugaIntrebareB1);
+        add.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {

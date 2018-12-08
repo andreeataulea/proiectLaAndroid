@@ -27,26 +27,33 @@
             android:id="@+id/adaugaIntrebareB1"
             android:layout_width="189dp"
             android:layout_height="100dp"
+            android:layout_below="@+id/intrebareEditText"
             android:layout_alignStart="@+id/intrebareEditText"
-            android:layout_below="@+id/intrebareEditText" />
+            android:text="Raspuns 1" />
+
         <Button
             android:id="@+id/adaugaIntrebareB2"
             android:layout_width="189dp"
             android:layout_height="100dp"
             android:layout_below="@+id/intrebareEditText"
-            android:layout_alignEnd="@+id/intrebareEditText"/>
+            android:layout_alignEnd="@+id/intrebareEditText"
+            android:text="Raspuns 2" />
+
         <Button
             android:id="@+id/adaugaIntrebareB3"
             android:layout_width="189dp"
             android:layout_height="100dp"
+            android:layout_below="@+id/adaugaIntrebareB1"
             android:layout_alignStart="@+id/intrebareEditText"
-            android:layout_below="@+id/adaugaIntrebareB1"/>
+            android:text="Raspuns 3" />
+
         <Button
             android:id="@+id/adaugaIntrebareB4"
             android:layout_width="189dp"
             android:layout_height="100dp"
             android:layout_below="@+id/adaugaIntrebareB2"
-            android:layout_alignEnd="@+id/intrebareEditText"/>
+            android:layout_alignEnd="@+id/intrebareEditText"
+            android:text="Raspuns 4" />
         <Button
             android:id="@+id/adaugaIntrebareButton"
             android:layout_width="90dp"
