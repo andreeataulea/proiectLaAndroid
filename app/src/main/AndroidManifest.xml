@@ -16,16 +16,18 @@
         <activity android:name=".DashboardProfesor" />
         <activity android:name=".TakeQuizz" />
         <activity android:name=".Start">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".TestCurentStudent" />
         <activity android:name=".creare_intrebare" />
         <activity android:name=".creare_intrebare_layout" />
-        <activity android:name=".create_quizz" />
+        <activity android:name=".create_quizz">
+        <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+
+        <category android:name="android.intent.category.LAUNCHER" />
+    </intent-filter>
+        </activity>
         <activity android:name=".create_quizz_layout" />
         <activity android:name=".my_quizzes" />
         <activity android:name=".my_quizzes_layout" />

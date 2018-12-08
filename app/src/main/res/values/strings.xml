@@ -39,6 +39,16 @@
     <string name="numeTextView">Nume test:</string>
     <string name="numeEditText" />
     <string name="listaQuizzTextView"/>
+    <string-array name="materii">
+        <item>Java</item>
+        <item>PAW</item>
+        <item>POO</item>
+        <item>SDD</item>
+        <item>Android</item>
+        <item>Tehnologii Web</item>
+        <item>Multimedia</item>
+        <item>Retele</item>
+    </string-array>
 
 
 
