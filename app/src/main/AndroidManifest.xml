@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.andre.android">
 
-    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -11,33 +11,50 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".LoginStudent" />
-        <activity android:name=".LoginProfesor"></activity>
+        <activity android:name=".LoginProfesor">
+
+        </activity>
         <activity android:name=".RegisterStudent" />
         <activity android:name=".RegisterProfesor" />
-        <activity android:name=".DashboardStudent"/>
+        <activity android:name=".DashboardStudent" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
 
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
         <activity android:name=".DashboardProfesor" />
         <activity android:name=".TakeQuizz" />
-        <activity android:name=".Start"></activity>
-        <activity android:name=".TestCurentStudent" />
-        <activity android:name=".creare_intrebare"></activity>
-        <activity android:name=".creare_intrebare_layout" />
-        <activity android:name=".create_quizz"></activity>
-        <activity android:name=".create_quizz_layout" />
-        <activity android:name=".my_quizzes"/>
+        <activity android:name=".Start">
 
+        </activity>
+        <activity android:name=".TestCurentStudent" />
+        <activity android:name=".creare_intrebare">
+
+        </activity>
+        <activity android:name=".creare_intrebare_layout" />
+        <activity android:name=".create_quizz">
+
+        </activity>
+        <activity android:name=".create_quizz_layout" />
+        <activity android:name=".my_quizzes">
+
+        </activity>
         <activity android:name=".my_quizzes_layout" />
-        <activity android:name=".reports" />
-        <activity android:name=".reports_layout" />
-        <activity android:name=".reports_table" />
-        <activity android:name=".FunFacts" />
-        <activity android:name=".rezultat">
+        <activity android:name=".reports">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".reports_layout">
+
+        </activity>
+        <activity android:name=".reports_table" />
+        <activity android:name=".FunFacts"/>
+
+
 
     </application>
 
