@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<rezultate>
+    <rezultat>
+        <codTest>Q100</codTest>
+        <materie>POO</materie>
+        <numeProfesor>Ionescu Mihai</numeProfesor>
+        <punctaj>90</punctaj>
+    </rezultat>
+    <rezultat>
+        <codTest>Q101</codTest>
+        <materie>SDD</materie>
+        <numeProfesor>Vasilescu Ionut</numeProfesor>
+        <punctaj>95</punctaj>
+    </rezultat>
+    <rezultat>
+        <codTest>Q102</codTest>
+        <materie>Java</materie>
+        <numeProfesor>Constantinescu Elena</numeProfesor>
+        <punctaj>79</punctaj>
+    </rezultat>
+    <rezultat>
+        <codTest>Q103</codTest>
+        <materie>POO</materie>
+        <numeProfesor>Preda Maria</numeProfesor>
+        <punctaj>93</punctaj>
+    </rezultat>
+    <rezultat>
+        <cod>Q104</cod>
+        <materie>Android</materie>
+        <numeProfesor>Zaharia Irina</numeProfesor>
+        <punctaj>98</punctaj>
+    </rezultat>
+</rezultate>
