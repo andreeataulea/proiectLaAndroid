@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.andre.android">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -14,7 +16,13 @@
         </activity>
         <activity android:name=".RegisterStudent" />
         <activity android:name=".RegisterProfesor" />
-        <activity android:name=".DashboardStudent" />
+        <activity android:name=".DashboardStudent" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
         <activity android:name=".DashboardProfesor" />
         <activity android:name=".TakeQuizz" />
         <activity android:name=".Start">
@@ -44,6 +52,8 @@
 
         </activity>
         <activity android:name=".reports_table" />
+        <activity android:name=".FunFacts"/>
+
 
 
     </application>

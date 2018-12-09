@@ -16,7 +16,12 @@ public class Quizz implements Serializable {
     public String toString(){
         StringBuilder sb=new StringBuilder();
         sb.append(numeTest);
+        sb.append(", ");
+        sb.append(codTest);
+        sb.append(", ");
+        sb.append(tipTest);
         return sb.toString();
+
     }
 
     public String getNumeTest(){return numeTest;}

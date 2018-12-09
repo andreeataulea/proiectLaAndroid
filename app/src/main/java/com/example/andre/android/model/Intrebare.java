@@ -20,6 +20,14 @@ public class Intrebare implements Serializable {
     public String toString(){
         StringBuilder sb=new StringBuilder();
         sb.append(intrebare);
+        sb.append(", ");
+        sb.append(raspuns1);
+        sb.append(", ");
+        sb.append(raspuns2);
+        sb.append(", ");
+        sb.append(raspuns3);
+        sb.append(", ");
+        sb.append(raspuns4);
         return  sb.toString();
     }
 

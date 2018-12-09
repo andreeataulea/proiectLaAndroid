@@ -6,4 +6,5 @@
     <item name="tvCodAdapter" type="id" />
     <item name="tvCodTextRaport" type="id" />
     <item name="tvPunctaj" type="id" />
+    <item name="cardFacts" type="id" />
 </resources>
