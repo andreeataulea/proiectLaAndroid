@@ -28,4 +28,9 @@ public class LoginProfesor extends AppCompatActivity {
             }
         });
     }
+
+    public void ActionRegProf(View view) {
+        Intent intent = new Intent(LoginProfesor.this, RegisterProfesor.class);
+        startActivity(intent);
+    }
 }

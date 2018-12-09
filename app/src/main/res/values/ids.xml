@@ -2,4 +2,8 @@
 <resources>
     <item name="btnSaveProfesor" type="id"></item>
     <item name="listaQuizzTextView" type="id"></item>
+    <item name="tvTipAdapter" type="id" />
+    <item name="tvCodAdapter" type="id" />
+    <item name="tvCodTextRaport" type="id" />
+    <item name="tvPunctaj" type="id" />
 </resources>

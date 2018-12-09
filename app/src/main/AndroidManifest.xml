@@ -9,7 +9,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".LoginStudent" />
-        <activity android:name=".LoginProfesor" />
+        <activity android:name=".LoginProfesor">
+
+        </activity>
         <activity android:name=".RegisterStudent" />
         <activity android:name=".RegisterProfesor" />
         <activity android:name=".DashboardStudent" />
@@ -19,14 +21,16 @@
 
         </activity>
         <activity android:name=".TestCurentStudent" />
-        <activity android:name=".creare_intrebare" />
+        <activity android:name=".creare_intrebare">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
         <activity android:name=".creare_intrebare_layout" />
         <activity android:name=".create_quizz">
-        <intent-filter>
-        <action android:name="android.intent.action.MAIN" />
 
-        <category android:name="android.intent.category.LAUNCHER" />
-    </intent-filter>
         </activity>
         <activity android:name=".create_quizz_layout" />
         <activity android:name=".my_quizzes" />

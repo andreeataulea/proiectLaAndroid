@@ -25,27 +25,27 @@
         android:id="@+id/editTextEmailStudent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="151dp"
         android:ems="10"
         android:inputType="textEmailAddress"
         android:hint="Email"
         android:layout_centerVertical="true"
-        android:text="@string/emailStudentRegister" />
+        android:text="@string/emailStudentRegister"
+        android:layout_below="@+id/editTextnumeStudent"
+        android:layout_marginTop="18dp" />
 
     <EditText
         android:id="@+id/editTextParolaStudent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="217dp"
+        android:layout_marginTop="18dp"
         android:ems="10"
         android:inputType="textPassword"
         android:text="@string/parolaStudentRegister"
         android:hint="Parola"
-        android:layout_centerVertical="true"/>
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/editTextEmailStudent"/>
 
     <Button
         android:id="@+id/buttonDataStudent"
@@ -53,42 +53,42 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/editTextnumeStudent"
-        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/editTextParolaStudent"
+        android:layout_marginTop="18dp"
         android:layout_centerVertical="true"
-        android:layout_marginBottom="183dp"
         android:background="#64462560"
         android:elevation="15dp"
         android:fadingEdge="horizontal"
         android:text="@string/dataStudent"
         android:textAllCaps="false"
         android:textColor="#cfcad1"
-        android:textSize="18sp" />
+        android:textSize="18sp"/>
 
     <TextView
         android:id="@+id/tvDateStudent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="122dp"
-        android:layout_marginBottom="196dp"
-        android:text="@string/tvDateStudent"
-        android:layout_centerVertical="true"
+        android:layout_below="@id/editTextParolaStudent"
         android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
         android:textStyle="italic"
-        android:layout_above="@id/editTextParolaStudent"
-        android:layout_alignRight="@id/buttonDataStudent"/>
+        android:layout_toRightOf="@+id/buttonDataStudent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="28dp"
+        android:textSize="18dp"/>
 
     <RadioGroup
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/editTextnumeStudent"
-        android:layout_alignRight="@id/tvSexStudent"
-        android:layout_alignParentBottom="true"
-        android:layout_centerInParent="true"
+        android:layout_alignRight="@id/tvSexProfesor"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
         android:layout_marginStart="50dp"
-        android:layout_marginRight="-103dp"
-        android:layout_marginBottom="106dp">
+        android:layout_toRightOf="@+id/tvSexStudent"
+        android:layout_below="@+id/tvDateStudent"
+        android:layout_marginTop="38dp"
+        android:id="@+id/RadioGroupStud">
 
         <RadioButton
             android:id="@+id/rbStudFeminin"
@@ -109,44 +109,43 @@
 
     <TextView
         android:id="@+id/tvSexStudent"
-        android:layout_width="wrap_content"
+        android:layout_width="50dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/tvDateStudent"
+        android:layout_centerVertical="true"
         android:layout_marginStart="91dp"
-        android:layout_marginBottom="146dp"
+        android:layout_marginTop="40dp"
         android:text="@string/tvSexStudent"
         android:textColor="#cfcad1"
-        android:textSize="18sp"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:layout_above="@id/buttonDataStudent"/>
+        android:textSize="18dp"/>
 
     <Button
         android:id="@+id/btnSaveStudent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="56dp"
-        android:layout_marginBottom="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
         android:background="#dffff29a"
         android:elevation="15dp"
         android:fadingEdge="horizontal"
         android:text="@string/btnSaveStudent"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="90dp"
+        android:layout_below="@+id/RadioGroupStud"
+        android:layout_marginTop="50dp" />
 
     <Button
         android:id="@+id/btnInapoiStudent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/btnSaveStudent"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="57dp"
         android:background="#dffff29a"
         android:elevation="15dp"
         android:fadingEdge="horizontal"
-        android:text="@string/btnInapoiStudent"
-        android:textStyle="bold" />
+        android:text="@string/btnInapoiProfesor"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/btnSaveStudent"
+        android:layout_marginLeft="30dp" />
 
 </RelativeLayout>
