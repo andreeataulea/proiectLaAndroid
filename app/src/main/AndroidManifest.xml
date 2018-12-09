@@ -22,22 +22,25 @@
         </activity>
         <activity android:name=".TestCurentStudent" />
         <activity android:name=".creare_intrebare">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
         </activity>
         <activity android:name=".creare_intrebare_layout" />
         <activity android:name=".create_quizz">
 
         </activity>
         <activity android:name=".create_quizz_layout" />
-        <activity android:name=".my_quizzes" />
+        <activity android:name=".my_quizzes">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
         <activity android:name=".my_quizzes_layout" />
         <activity android:name=".reports" />
         <activity android:name=".reports_layout" />
         <activity android:name=".reports_table" />
+
 
     </application>
 

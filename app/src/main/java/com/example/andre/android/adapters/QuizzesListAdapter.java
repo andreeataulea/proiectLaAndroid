@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import com.example.andre.android.R;
@@ -12,37 +13,50 @@ import com.example.andre.android.model.Intrebare;
 import com.example.andre.android.model.Quizz;
 
 import java.util.ArrayList;
+import java.util.List;
 
-public class QuizzesListAdapter extends ArrayAdapter<Quizz> {
+public class QuizzesListAdapter extends BaseAdapter {
 
-    private static final String TAG="QuizzesListAdapter";
+
     private Context mContext;
-    int mResources;
+    private List<Quizz> mQuizzes;
 
-
-    public QuizzesListAdapter(Context context, int resource, ArrayList<Quizz>objects) {
-        super(context, resource, objects);
+    public QuizzesListAdapter(Context context,List<Quizz>mQuizzes) {
         this.mContext = context;
-        this.mResources = resource;
+        this.mQuizzes = mQuizzes;
+
+    }
+
+    @Override
+    public int getCount() {
+        return mQuizzes.size();
+    }
+
+    @Override
+    public Object getItem(int position) {
+        return mQuizzes.get(position);
+    }
+
+    @Override
+    public long getItemId(int position) {
+        return position;
     }
 
     @Override
     public View getView(int position,View covertView, ViewGroup parent) {
-        String nume= getItem(position).getNumeTest();
-        String cod=getItem(position).getCodTest();
-        String tip=getItem(position).getTipTest();
+        View v = View.inflate(mContext, R.layout.adapter_view_quizz,null);
 
-        Quizz q1=new Quizz(nume,cod,tip);
-        LayoutInflater inflater=LayoutInflater.from(mContext);
-        covertView=inflater.inflate(mResources,parent,false);
-        TextView tvtN=(TextView)covertView.findViewById(R.id.tvNumeAdapter);
-        TextView tvtC=(TextView)covertView.findViewById(R.id.tvCodAdapter);
-        TextView tvtT=(TextView)covertView.findViewById(R.id.tvTipAdapter);
+        TextView tvtN=(TextView)v.findViewById(R.id.tvNumeAdapter);
+        TextView tvtC=(TextView)v.findViewById(R.id.tvCodAdapter);
+        TextView tvtT=(TextView)v.findViewById(R.id.tvTipAdapter);
 
-        tvtN.setText(nume);
-        tvtC.setText(cod);
-        tvtT.setText(tip);
 
-        return  covertView;
+        tvtN.setText(mQuizzes.get(position).getNumeTest());
+        tvtC.setText(mQuizzes.get(position).getCodTest());
+        tvtT.setText(mQuizzes.get(position).getTipTest());
+
+        v.setTag(mQuizzes.get(position).getCodTest());
+
+        return  v;
     }
 }
