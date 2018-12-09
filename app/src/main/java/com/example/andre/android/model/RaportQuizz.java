@@ -24,7 +24,12 @@ public class RaportQuizz implements Serializable {
    public String toString(){
        StringBuilder sb=new StringBuilder();
        sb.append(numeTestR);
+       sb.append(", ");
+       sb.append(codTestR);
+       sb.append(", ");
+       sb.append(punctaj);
        return sb.toString();
+
    }
 
 }

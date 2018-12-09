@@ -47,9 +47,5 @@ public class RapoarteQuizzes extends AppCompatActivity {
         rapoarteList.add(q9);
         rapoarteList.add(q10);
 
-
-
-
-
     }
 }
