@@ -10,6 +10,7 @@ import android.widget.Toast;
 
 public class TakeQuizz extends AppCompatActivity {
 
+    public static final  String Extra_number = "com.example.andre.android.Extra_number";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,20 +20,23 @@ public class TakeQuizz extends AppCompatActivity {
         sendButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int cod = Integer.parseInt(editText.getText().toString());
-
-                Intent intent = new Intent(getApplicationContext(),TestCurentStudent.class);
-
-                intent.putExtra("mycode",cod);
-
-                startActivity(intent);
+                ActionTestCurent();
             }
         });
     }
 
 
-    public void ActionTestCurent(View view) {
+    public void ActionTestCurent() {
+        EditText editText = (EditText)findViewById(R.id.edCodTestStud);
+        int cod = Integer.parseInt(editText.getText().toString());
+
+
+
+
         Intent intent = new Intent(TakeQuizz.this, TestCurentStudent.class);
+        intent.putExtra(Extra_number,cod);
         startActivity(intent);
     }
+
+
 }

@@ -7,4 +7,6 @@
     <item name="tvCodTextRaport" type="id" />
     <item name="tvPunctaj" type="id" />
     <item name="cardFacts" type="id" />
+    <item name="layout" type="id" />
+    <item name="txt1" type="id" />
 </resources>

@@ -6,7 +6,7 @@
         <materie>POO</materie>
         <numeProfesor>Ionescu Mihai</numeProfesor>
         <punctaj>90</punctaj>
-    </rezultat>
+     </rezultat>
     <rezultat>
         <codTest>Q101</codTest>
         <materie>SDD</materie>

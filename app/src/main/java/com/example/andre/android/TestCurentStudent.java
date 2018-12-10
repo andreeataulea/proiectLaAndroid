@@ -16,8 +16,8 @@ public class TestCurentStudent extends AppCompatActivity {
 
         Intent intent = getIntent();
 
-        int cod = Integer.parseInt(intent.getStringExtra("mycode"));
+        int cod = intent.getIntExtra(TakeQuizz.Extra_number,0);
 
-        editText.setText(cod);
+        editText.setText(""+cod);
     }
 }

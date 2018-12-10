@@ -16,19 +16,23 @@
         </activity>
         <activity android:name=".RegisterStudent" />
         <activity android:name=".RegisterProfesor" />
-        <activity android:name=".DashboardStudent" >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".DashboardStudent"
+            android:parentActivityName=".LoginStudent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
     </activity>
         <activity android:name=".DashboardProfesor" />
-        <activity android:name=".TakeQuizz" />
+        <activity android:name=".TakeQuizz">
+
+        </activity>
         <activity android:name=".Start">
 
         </activity>
-        <activity android:name=".TestCurentStudent" />
+        <activity android:name=".TestCurentStudent"
+            android:parentActivityName=".TakeQuizz"/>
         <activity android:name=".creare_intrebare">
 
         </activity>
@@ -42,18 +46,16 @@
         </activity>
         <activity android:name=".my_quizzes_layout" />
         <activity android:name=".reports">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".reports_layout">
 
         </activity>
         <activity android:name=".reports_table" />
         <activity android:name=".FunFacts"/>
+        <activity android:name=".rezultat">
 
+        </activity>
 
 
     </application>

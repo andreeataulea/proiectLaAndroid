@@ -33,8 +33,6 @@
         android:layout_centerHorizontal="true"
         android:layout_alignTop="@+id/edCodTestStud"
         android:layout_marginTop="70dp"
-        android:text="Start"
-        android:onClick="ActionTestCurent"
-        />
+        android:text="Start" />
 
 </RelativeLayout>
