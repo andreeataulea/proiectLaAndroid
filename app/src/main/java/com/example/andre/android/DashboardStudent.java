@@ -31,4 +31,9 @@ public class DashboardStudent extends AppCompatActivity {
             }
         });
     }
+
+    public void ActionIncepeTest(View view) {
+        Intent intent = new Intent(DashboardStudent.this, TakeQuizz.class);
+        startActivity(intent);
+    }
 }

@@ -31,4 +31,8 @@ public class TakeQuizz extends AppCompatActivity {
     }
 
 
+    public void ActionTestCurent(View view) {
+        Intent intent = new Intent(TakeQuizz.this, TestCurentStudent.class);
+        startActivity(intent);
+    }
 }

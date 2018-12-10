@@ -27,4 +27,14 @@ public class DashboardProfesor extends AppCompatActivity {
         Intent intent = new Intent(DashboardProfesor.this, my_quizzes.class);
         startActivity(intent);
     }
+
+    public void ActionCreeazaTest(View view) {
+        Intent intent = new Intent(DashboardProfesor.this, create_quizz.class);
+        startActivity(intent);
+    }
+
+    public void ActionRapoarte(View view) {
+        Intent intent = new Intent(DashboardProfesor.this, reports.class);
+        startActivity(intent);
+    }
 }
