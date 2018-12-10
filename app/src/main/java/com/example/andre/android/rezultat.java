@@ -73,6 +73,7 @@ public class rezultat extends AppCompatActivity {
                         rezultatCurent.punctaj = parser.nextText();
                     }
                 }
+                
                 break;
             }
             eventType = parser.next();
