@@ -42,18 +42,18 @@
         </activity>
         <activity android:name=".my_quizzes_layout" />
         <activity android:name=".reports">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name=".reports_layout">
 
         </activity>
         <activity android:name=".reports_table" />
         <activity android:name=".FunFacts">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
         </activity>
         <activity android:name=".rezultat">
 

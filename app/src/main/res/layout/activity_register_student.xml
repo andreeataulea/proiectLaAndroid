@@ -81,7 +81,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/editTextnumeStudent"
-        android:layout_alignRight="@id/tvSexProfesor"
+        android:layout_alignRight="@id/tvSexStudent"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="50dp"
