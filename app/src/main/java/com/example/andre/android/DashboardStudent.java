@@ -15,25 +15,26 @@ public class DashboardStudent extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard_student);
-        TextView editTextStud = (TextView) findViewById(R.id.textGridStud);
+        TextView editTextStud = (TextView) findViewById(R.id.numeLogStudent);
 
 
         click=(CardView) findViewById(R.id.cardFacts);
 
+        Intent intent = getIntent();
+        String text = intent.getStringExtra(LoginStudent.Extra_nume);
 
-        click.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent=new Intent(DashboardStudent.this,FunFacts.class);
-                startActivity(intent);
+        editTextStud.setText(text);
 
 
-            }
-        });
     }
 
     public void ActionIncepeTest(View view) {
         Intent intent = new Intent(DashboardStudent.this, TakeQuizz.class);
+        startActivity(intent);
+    }
+
+    public void ActionRaportStud(View view) {
+        Intent intent = new Intent(DashboardStudent.this, rezultat.class);
         startActivity(intent);
     }
 }

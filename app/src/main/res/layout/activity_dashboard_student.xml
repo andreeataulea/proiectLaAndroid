@@ -9,10 +9,21 @@
     android:weightSum="10"
     tools:context=".DashboardStudent">
 
+
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:textColor="@android:color/black"
+            android:layout_toRightOf="@+id/textGridStud"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/numeLogStudent"/>
 
         <TextView
             android:id="@+id/textGridStud"
@@ -90,7 +101,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal|center_vertical"
                 android:layout_margin="16dp"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:onClick="ActionRaportStud">
 
                 <ImageView
                     android:layout_width="wrap_content"
