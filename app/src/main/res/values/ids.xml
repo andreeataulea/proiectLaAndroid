@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <item name="btnSaveProfesor" type="id"/>
-    <item name="listaQuizzTextView" type="id"/>
+    <item name="btnSaveProfesor" type="id"></item>
+    <item name="listaQuizzTextView" type="id"></item>
+    <item name="tvTipAdapter" type="id" />
+    <item name="tvCodAdapter" type="id" />
+    <item name="tvCodTextRaport" type="id" />
+    <item name="tvPunctaj" type="id" />
+    <item name="cardFacts" type="id" />
+    <item name="layout" type="id" />
+    <item name="txt1" type="id" />
 </resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="100">
+
+    <TextView
+        android:id="@+id/tvNumeRaport"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_weight="66.6"/>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="33.3">
+
+    <TextView
+        android:id="@+id/tvCodTextRaport"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tvPunctaj"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+       android:gravity="center" />
+
+        <TextView
+            android:id="@+id/tvMaterie"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center" />
+
+    </LinearLayout>
+</LinearLayout>

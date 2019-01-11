@@ -9,6 +9,8 @@ import android.widget.EditText;
 
 public class LoginStudent extends AppCompatActivity {
 
+    public static final  String Extra_nume = "com.example.andre.android.Extra_nume";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,14 +21,19 @@ public class LoginStudent extends AppCompatActivity {
         sendButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String mail = editTextStud.getText().toString();
 
-                Intent intent = new Intent(getApplicationContext(),TestCurentStudent.class);
-
-                intent.putExtra("myemailStud",mail);
-
-                startActivity(intent);
+                ActionIntraStud();
             }
+
         });
+    }
+
+    public void ActionIntraStud() {
+        EditText editText = (EditText)findViewById(R.id.editTextEmailStudent);
+        String text = editText.getText().toString();
+
+        Intent intent = new Intent(LoginStudent.this, DashboardStudent.class);
+        intent.putExtra(Extra_nume,text);
+        startActivity(intent);
     }
 }

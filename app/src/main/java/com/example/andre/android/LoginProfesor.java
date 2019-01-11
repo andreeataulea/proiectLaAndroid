@@ -13,19 +13,13 @@ public class LoginProfesor extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_profesor);
-        final EditText editTextProf = (EditText)findViewById(R.id.editTextEmailProfesor);
-        CardView sendButton = (CardView) findViewById(R.id.loginProf);
-        sendButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String mail = editTextProf.getText().toString();
 
-                Intent intent = new Intent(getApplicationContext(),TestCurentStudent.class);
 
-                intent.putExtra("myemail",mail);
 
-                startActivity(intent);
-            }
-        });
+    }
+
+    public void ActionRegProf(View view) {
+        Intent intent = new Intent(LoginProfesor.this, RegisterProfesor.class);
+        startActivity(intent);
     }
 }

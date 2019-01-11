@@ -33,7 +33,6 @@
         android:layout_centerHorizontal="true"
         android:layout_alignTop="@+id/edCodTestStud"
         android:layout_marginTop="70dp"
-        android:text="Start"
-        />
+        android:text="Start" />
 
 </RelativeLayout>
