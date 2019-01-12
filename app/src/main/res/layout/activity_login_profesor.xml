@@ -44,7 +44,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_marginStart="82dp"
-        android:text="Remeber me"
+        android:text="Remember me"
         android:textSize="18sp"
         android:layout_below="@+id/editTextParolaProf"
         android:layout_marginTop="38dp"
@@ -92,6 +92,6 @@
         android:textColor="@android:color/white"
         android:textSize="18dp"
         android:textStyle="bold"
-        android:onClick="ActionRegProf"/>
+      />/  android:onClick="ActionRegProf"/>
 
 </RelativeLayout>
