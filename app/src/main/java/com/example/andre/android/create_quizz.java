@@ -8,17 +8,21 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
 public class create_quizz extends Activity {
-
+    Spinner spinnerMaterii;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_quizz);
 
-        Spinner spinnerMaterii = (Spinner)findViewById(R.id.spinnerMaterie);
+        spinnerMaterii = (Spinner)findViewById(R.id.spinnerMaterie);
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.materii,android.R.layout.simple_expandable_list_item_1);
 
         spinnerMaterii.setAdapter(adapter);
+    }
+
+    public Spinner getSpinnerMaterii(){
+        return spinnerMaterii;
     }
 
     public void ActionAdauga(View view) {

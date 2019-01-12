@@ -49,11 +49,12 @@ public class QuizzesListAdapter extends BaseAdapter {
         TextView tvtN=(TextView)v.findViewById(R.id.tvNumeAdapter);
         TextView tvtC=(TextView)v.findViewById(R.id.tvCodAdapter);
         TextView tvtT=(TextView)v.findViewById(R.id.tvTipAdapter);
-
+        TextView tvtM=(TextView)v.findViewById(R.id.tvMaterieAdapter);
 
         tvtN.setText(mQuizzes.get(position).getNumeTest());
         tvtC.setText(mQuizzes.get(position).getCodTest());
         tvtT.setText(mQuizzes.get(position).getTipTest());
+        tvtM.setText(mQuizzes.get(position).getMaterie());
 
         v.setTag(mQuizzes.get(position).getCodTest());
 

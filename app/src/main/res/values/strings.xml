@@ -49,6 +49,7 @@
         <item>Multimedia</item>
         <item>Retele</item>
     </string-array>
+    <string name="spinnerMaterie"></string>
 
 
 </resources>

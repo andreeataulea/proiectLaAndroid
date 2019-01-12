@@ -21,11 +21,11 @@ public class reports extends Activity {
         Log.d(TAG,"onCreate: Started.");
         ListView mListView = (ListView)findViewById(R.id.lvRapoarte);
 
-        RaportQuizz q1 = new RaportQuizz("Maria","100","60","Java");
-        RaportQuizz q2 = new RaportQuizz("Mara","101","65","SDD");
-        RaportQuizz q3 = new RaportQuizz("Ana","102","90","Java");
-        RaportQuizz q4 = new RaportQuizz("Mia","103","79","PAW");
-        RaportQuizz q5 = new RaportQuizz("Robert","104","90","Android");
+        RaportQuizz q1 = new RaportQuizz("Test Java 1","100","60","Java","Maria Stanescu");
+        RaportQuizz q2 = new RaportQuizz("Test SDD 2","101","65","SDD","Mara Georgescu");
+        RaportQuizz q3 = new RaportQuizz("Test Java 1","102","90","Java","Gigi Ionescu");
+        RaportQuizz q4 = new RaportQuizz("Test PAW 1","103","79","PAW","Ioana Popescu");
+        RaportQuizz q5 = new RaportQuizz("Test Android 2","104","90","Android","Marian Dumitru");
 
         ArrayList<RaportQuizz> lista = new ArrayList<RaportQuizz>();
         lista.add(q1);

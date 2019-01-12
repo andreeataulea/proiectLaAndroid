@@ -39,4 +39,15 @@
         android:layout_toRightOf="@+id/tvNumeAdapter"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/tvMaterieAdapter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="98dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/tvNumeAdapter"
+        android:text="Materie"
+        android:textColor="@android:color/black"
+        android:textSize="18dp" />
 </RelativeLayout>

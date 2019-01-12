@@ -32,8 +32,9 @@ public class ReportAdapter extends ArrayAdapter<RaportQuizz> {
         String cod=getItem(position).getCodTestR();
         String punctaj=getItem(position).getPunctaj();
         String materie = getItem(position).getMaterie();
+        String numeStudent=getItem(position).getNumeStudent();
 
-        RaportQuizz q1=new RaportQuizz(  nume,cod, punctaj,materie);
+        RaportQuizz q1=new RaportQuizz(  nume,cod, punctaj,materie,numeStudent);
         LayoutInflater inflater=LayoutInflater.from(mContext);
         convertView=inflater.inflate(mResource,parent,false);
 
@@ -41,11 +42,14 @@ public class ReportAdapter extends ArrayAdapter<RaportQuizz> {
         TextView tvtC=(TextView)convertView.findViewById(R.id.tvCodTextRaport);
         TextView tvtP=(TextView)convertView.findViewById(R.id.tvPunctaj);
         TextView tvM = (TextView)convertView.findViewById(R.id.tvMaterie);
+        TextView tvNS=(TextView)convertView.findViewById(R.id.tvNumeStudent) ;
+
 
         tvtN.setText(nume);
         tvtC.setText(cod);
         tvtP.setText(punctaj);
         tvM.setText(materie);
+        tvNS.setText(numeStudent);
 
         return convertView;
     }

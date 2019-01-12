@@ -15,6 +15,9 @@ public class TakeQuizz extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_take_quizz);
+
+
+
         final EditText editText = (EditText)findViewById(R.id.edCodTestStud);
         Button sendButton = (Button)findViewById(R.id.btnStart);
         sendButton.setOnClickListener(new View.OnClickListener() {
@@ -31,11 +34,13 @@ public class TakeQuizz extends AppCompatActivity {
         int cod = Integer.parseInt(editText.getText().toString());
 
 
-
-
         Intent intent = new Intent(TakeQuizz.this, TestCurentStudent.class);
         intent.putExtra(Extra_number,cod);
         startActivity(intent);
+    }
+
+    public void setData(){
+
     }
 
 

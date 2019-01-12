@@ -13,9 +13,9 @@ import com.example.andre.android.model.RaportQuizz;
 import java.util.ArrayList;
 import java.util.List;
 
-import de.codecrafters.tableview.TableView;
-import de.codecrafters.tableview.toolkit.SimpleTableDataAdapter;
-import de.codecrafters.tableview.toolkit.SimpleTableHeaderAdapter;
+//import de.codecrafters.tableview.TableView;
+//import de.codecrafters.tableview.toolkit.SimpleTableDataAdapter;
+//import de.codecrafters.tableview.toolkit.SimpleTableHeaderAdapter;
 
 import static android.content.ContentValues.TAG;
 
